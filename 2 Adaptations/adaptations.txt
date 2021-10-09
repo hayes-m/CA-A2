@@ -1,0 +1,224 @@
+;
+exit
+create database adaptations;
+use adaptations;
+create table movies(
+movieName varchar(50),
+year int,genre varchar(20),runtime int, directorID int, movieID int, bookID int);
+create table movies( movieName varchar(50), year int,genre varchar(20),runtime int, directorID int, movieID int, bookID int);
+create table directors(directorName varchar(50), activeFrom int, country varchar(2), directorID int, movieID int);
+create table books(bookName varchar(50), bookID int, author varchar(50), publicationYear int, pages int, movieID int);
+desc adaptations.movies;
+desc adaptations.directors;
+desc adaptations.books
+;
+insert into movies values('The Shawshank Redemption','1994','Drama','142','201','101','301');
+insert into movies values('The Godfather: Part I','1972','Crime','175','202','102','302');
+insert into movies values('The Godfather: Part II','1974','Crime','202','202','103','302');
+insert into movies values('Schindler's List','1993','Biography','195','203','104','303');
+;
+';
+insert into movies values('Schindler's List','1993','Biography','195','203','104','303');\012;\012';
+insert into movies values('Schindlers List','1993','Biography','195','203','104','303');
+insert into movies values('The Lord of the Rings: Return of the King','203','Fantasy','263','204','105','304');
+insert into movies values('The Lord of the Rings: Fellowship of the Ring','2001','Fantasy','238','204','106','305');
+insert into movies values('Fight Club','1999','Drama','139','205','107','306');
+insert into movies values('Forrest Gump','1994','Drama','142','206','108','307');
+insert into movies values('The Lord of the Rings: The Two Towers','2002','Fantasy','226','204','109','308');
+insert into movies values('Goodfellas','1990','Biography','146','207','110','309');
+select * from movies;
+update movies
+set year='2003'
+where year='203';
+update movies set year='2003' where year='203';
+select * from movies;
+insert into directors values('Frank Darabont','1981','US','201','101');
+insert into directors values('Francis Ford Coppola','1962','US','202','102,103');
+insert into directors values('Francis Ford Coppola','1962','US','202','102-103');
+insert into directors values('Francis Ford Coppola','1962','US','202','102');
+insert into directors values('Francis Ford Coppola','1962','US','202','103');
+insert into directors values('Steven Spielberg','1959','US','203','104');
+insert into directors values('Peter Jackson','1976','NZ','204','105');
+insert into directors values('Peter Jackson','1976','NZ','204','106');
+insert into directors values('David Fincher','1980','US','205','107');
+insert into directors values('Robert Zemeckis','1972','US','206','108');
+insert into directors values('Peter Jackson','1976','NZ','204','109');
+insert into directors values('Martin Scorsese','1962','US','207','110');
+select * from directors;
+insert into books values('Rita Hayworth and the Shawshank Redemption','301','Stephen King','1982','144','101');
+insert into books values('The Godfather','302','Mario Puzo','1969','608','102');
+insert into books values('The Godfather','302','Mario Puzo','1969','608','103');
+insert into books values('Schindlers Ark','303','Thomas Keneally','1982','432','104');
+insert into books values('The Lord of the Rings: The Return of the King','304','JRR Tolkien','1955','464','105');
+insert into books values('The Lord of the Rings: The Fellowship of the Ring','305','JRR Tolkien','1954','448','106');
+insert into books values('Fight Club','306','Chuck Palahniuk','1996','224','107');
+insert into books values('Forrest Gump','307','Winston Groom','1986','240','108');
+insert into books values('The Lord of the Rings: The Two Towers','308','JRR Tolkien','1954','352','109');
+insert into books values('Goodfellas','309','Nicholas Pileggi','1985','240','108');
+update books set pages='304' where pages='240';
+update books set pages='240' where pages='304';
+select * from books;
+delete from books where movieID=108;
+select * from books;
+delete from books where movieID=109;
+select * from books;
+insert into books values('Forrest Gump','307','Winston Groom','1986','240','108');
+insert into books values('The Lord of the Rings: The Two Towers','308','JRR Tolkien','1954','352','109');
+insert into books values('Goodfellas','309','Nicholas Pileggi','1985','304','110');
+select * from books;
+delete from books where movieID=103;
+delete from directors where directorID=202;
+select * from movies;
+delete from moviess where movieID=102;
+delete from movies where movieID=102;
+sed "s/\134\134\134040/ /g" < .mysql_history
+;
+exit
+alter table movies
+;
+alter table movies
+primary key (movieID);
+alter table movies primary key (movieID);
+use adaptations;
+alter table movies primary key (movieID);
+alter table movies add primary key (movieID);
+alter table movies add foreign key (directorID);
+desc adaptations.movies
+;
+alter table movies add foreign key (directorID) references directors(directorID);
+alter table directors add primary key (directorID);
+delete from directors where movieID=109;
+delete from directors where movieID=106;
+alter table directors add primary key (directorID);
+desc adaptation.directors;
+desc adaptations.directors
+;
+alter table movies add foreign key (directorID) references directors(directorID);
+exit
+show databases
+;
+use adaptations;
+select * from movies
+;
+select * from directors;
+select * from books;
+alter table movies add foreign key (directorID) references directors(directorID);
+desc adaptations.movies;
+desc adaptations.directors;
+desc adaptations.books;
+alter table books add primary key (bookID);
+alter table books add foreign key (movieID) references movies(movieID);
+alter table movies add foreign key (directorID) references directors (directorID);
+alter table movies add constraint FKMoviesDirectors foreign key (directorID) references adaptations.directors (directorID);
+alter table movies add foreign key (directorID) references adaptations.directors (directorID);
+alter table movies add foreign key mdFK (directorID) references directors (directorID);
+alter table adaptations.movies add foreign key (directorID) references adaptations.directors (directorID);
+alter table 'adaptations.movies' add foreign key ('directorID') references 'adaptations.directors' ('directorID');
+alter table adaptations.movies add foreign key (directorID) references adaptations.directors (directorID);
+desc adaptations.books;
+desc adaptaions.movies;
+desc adaptations.movies;
+desc adaptations.directors;
+alter table directors add foreign key (movieID) references movies (movieID);
+desc adaptations.directors;
+alter table books add foreign key (movieID) references movies (movieID);
+insert into books values('The Godfather','302','Mario Puzo','1969','608','103');
+insert into books values('The Sicilian','310','Mario Puzo','1969','608','103');
+alter table books add foreign key (movieID) references movies (movieID);
+select * from books;
+select * from movies;
+insert into movies values('The Godfather: Part I','1972','Crime','175','202','102','302');
+update books set bookID='310' where year='1974';
+update movies set bookID='310' where year='1974';
+select * from movies;
+alter table books add foreign key (movieID) references movies (movieID);
+desc adaptations.movies;
+alter table movies add foreign key (bookID) references books (bookID);
+desc adaptations.movies;
+desc adaptations.directors;
+desc adaptations.books;
+exit
+use adaptations;
+select * from movies;
+exit
+mysqldump adaptations -uroot -pshire >adaptations.sql
+;
+exit
+show variables like '%ssl%';
+exit
+use adaptations
+select * from movies;
+exit
+use adaptations
+exit
+use adaptations
+alter table movies drop foreign key (bookID) references books (bookID);
+alter table movies drop primary key;
+alter table movies drop foreign key;
+desc movies;
+alter table movies drop primary key;
+alter table movies drop key;
+alter table books drop primary key;
+alter table directors drop primary key;
+alter table movies drop foreign key;
+alter table movies drop primary key;
+alter table books drop primary key;
+alter table movies drop primary key;
+alter table directors drop foreign key;
+alter table movies drop foreign key 8f1_f;
+alter table movies drop foreign key sql-8f1_f;
+alter table movies drop foreign key #sql-8f1_f;
+;
+select * from information_schema.table_constraints where constraint_schema = 'adaptations';
+alter table movies drop foreign key directors_ibfk_1;
+alter table movies drop foreign key movies_ibfk_1;
+alter table books drop foreign key books_ibfk_1;
+alter table directors drop foreign key books_ibfk_1;
+alter table books drop foreign key books_ibfk_1;
+alter table directors drop foreign key directors_ibfk_1;
+select * from information_schema.table_constraints where constraint_schema = 'adaptations';
+alter table movies drop primary key;
+alter table books drop primary key;
+exit
+use adaptations
+select * from directors
+;
+delete from directors where country=CZ limit 1
+;
+drop from directors where country=CZ limit 1
+;
+select * from directors where country=CZ
+;
+select * from directors where country='CZ';
+delete from directors where country='CZ';
+select * from directors;
+exit
+use f1
+exit
+use adaptations
+show tables
+;
+desc books;
+desc movies;
+desc directors;
+alter table books add primary key(bookID);
+alter table movies add primary key (movieID);
+alter table directors add primary key (directorID);
+desc books;
+desc directors;
+desc movies'
+;
+'
+;
+desc movies'\012;\012';
+desc movies;
+select b.bookName,b.author,m.movieName,m.year,d.directorName
+from books b, movies m, directors d
+where b.movieID = m.movieID = d.movieID;
+select b.bookName,b.author,m.movieName,m.year,d.directorName from books b, movies m, directors d where b.movieID = m.movieID = d.movieID;
+select b.bookName,b.author,m.movieName,m.year from books b, movies m where b.movieID = m.movieID;
+select b.bookName,m.year,m.movieName,d.directorName from books b, movies m, directors d where b.movieID=m.movieID=d.movieID;
+select b.bookName,m.year,m.movieName,d.directorName from books b inner join movies m on b.movieID = m.movieID inner join directors d on d.movieID = m.movieID;
+mysqldump adaptations -uroot -pshire >adaptations.sql
+;
+exit

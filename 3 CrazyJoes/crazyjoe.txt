@@ -1,0 +1,687 @@
+sed "s/\134\134\134040/ /g" < .mysql_history;
+exit
+insert into consoles values ('','DS','Nintendo','Red','80','PAL','5');
+use crazyjoes
+use crazyjoe
+insert into consoles values ('','DS','Nintendo','Red','80','PAL','5');
+insert into consoles values ('1','DS','Nintendo','Red','80','PAL','5');
+select * from consoles
+;
+insert into consoles values ('','3DS','Nintendo','Blue','180','PAL','3');
+insert into consoles values ('default','3DS','Nintendo','Blue','180','PAL','3');
+select * from consoles;
+insert into consoles values (default,'3DS','Nintendo','Blue','180','PAL','3');
+select * from consoles;
+insert into consoles values ('3DS','Nintendo','Gold','180','PAL','1');
+insert into consoles values (default,'3DS','Nintendo','Gold','180','PAL','1');
+insert into consoles values ('Wii','Nintendo','Black','130','PAL','3')
+insert into consoles values ('Wii','Nintendo','White','130','PAL','2')
+insert into consoles values ('WiiU','Nintendo','White','250','PAL','3')
+;
+insert into consoles values ('Wii','Nintendo','Black','130','PAL','3') insert into consoles values ('Wii','Nintendo','White','130','PAL','2') insert into consoles values ('WiiU','Nintendo','White','250','PAL','3') insert into consoles values ('WiiU','Nintendo','White','250','PAL','3');
+insert into consoles values (default,'Wii','Nintendo','Black','130','PAL','3')
+insert into consoles values (default,'Wii','Nintendo','White','130','PAL','2')
+insert into consoles values (default,'WiiU','Nintendo','White','250','PAL','3')
+insert into consoles values (default,'Xbox360','Microsoft','Black','290',,'PAL','2')
+insert into consoles values (default,'PS3','Sony','Black','260',,'PAL','2')
+insert into consoles values (default,'PSP','Sony','Black','130',,'PAL','0');
+insert into consoles values (default,'Wii','Nintendo','Black','130','PAL','3') insert into consoles values (default,'Wii','Nintendo','White','130','PAL','2') insert into consoles values (default,'WiiU','Nintendo','White','250','PAL','3') insert into consoles values (default,'Xbox360','Microsoft','Black','290',,'PAL','2') insert into consoles values (default,'PS3','Sony','Black','260',,'PAL','2') insert into consoles values (default,'PSP','Sony','Black','130',,'PAL','0');
+select * from consoles;
+insert into consoles values (default,'Wii','Nintendo','Black','130','PAL','3');
+insert into consoles values (default,'Wii','Nintendo','White','130','PAL','2');
+insert into consoles values (default,'WiiU','Nintendo','White','250','PAL','3');
+insert into consoles values (default,'Xbox360','Microsoft','Black','290',,'PAL','2');
+insert into consoles values (default,'Xbox360','Microsoft','Black','290','PAL','2');
+insert into consoles values (default,'PS3','Sony','Black','260','PAL','2');
+insert into consoles values (default,'PSP','Sony','Black','130','PAL','0');
+select * from consoles;
+insert into games values (1001,'Assassins Creed','15','50','32')
+insert into games values (default,'Call of Duty','18','32','32');
+insert into games values (1001,'Assassins Creed','15','50','32') insert into games values (default,'Call of Duty','18','32','32');
+insert into games values (1001,'Assassins Creed','15','50','32');
+insert into games values (default,'Call of Duty','18','32','32');
+desc games;
+select * from games;
+INSERT INTO 
+games(gameID,gameName,rating,gameStock,gamePrice)
+VALUES
+(default,'Dead Island','18','122','25'),
+(default,'FIFA 13','12','21','35'),
+(default,'Luigi''s Mansion','7','122','22'),
+(default,'Super Mario Bros U','3','23','22'),
+(default,'Tomadachi','12','121','20'),
+(default,'Lego City','7','33','15'),
+(default,'Gorf','7','62','3'),
+(default,'Dragons Dogma','18','280','40'),
+(default,'Injustice','18','122','40');
+INSERT INTO  games(gameID,gameName,rating,gameStock,gamePrice) VALUES (default,'Dead Island','18','122','25'), (default,'FIFA 13','12','21','35'), (default,'Luigi''s Mansion','7','122','22'), (default,'Super Mario Bros U','3','23','22'), (default,'Tomadachi','12','121','20'), (default,'Lego City','7','33','15'), (default,'Gorf','7','62','3'), (default,'Dragons Dogma','18','280','40'), (default,'Injustice','18','122','40');
+select * from games;
+select * from consoles
+;
+desc customers;
+alter table customers modify column address varchar(100);
+desc customers;
+quit
+use crazyjoe
+exit
+use adaptations
+select * from movies, directors, books where movies.movieID = directors.movieID = books.movieID;
+select * from movies, directors, books where movies.movieID = directors.movieID;
+use crazyjoe
+INSERT INTO 
+customers(customerID,customerName,storeName,address,phone)
+VALUES
+(100,'Pauline Smith','Gamelife','11 Jamestown Court, Galway','081-4125215'),
+(default,'Peter Murphy','Pete''s Shack','The Laurels, Perrystown, Dublin 6W','082-9891234'),
+(default,'Brian McDermott','Electronics Extreme','31a Hamilton Court, Bray, Wicklow','080-1242412'),
+(default,'Frank Darcy','Gameland','12 Shop Street, Galway','081-124121'),
+(default,'Ron Hoey','Gamelife','31 Sallins View, Naas, Kildare','None'),
+(default,'Tracey Nolan','The Smart Store','1 Brookfield Close, Artane, D5','01-8212311'),
+(default,'Francoise Lideau','Les Artisans','23 Rue Des Martyrs, 5 Arrondissement, 34533 Paris, France','0033 123 83473'),
+(default,'Ronan O''Hare','Gamelife','312 Verbena Lawns, Bayside, Dublin','01-8231223'),
+(default,'Sean O''Connor','Sean O''Connor','The Cloisters, Dalkey Village Dublin','01-232233'),
+(default,'Sarah Phelin','Egame.com','Apt 232, Building 33, IFSC, D1','081-2141243'),
+(default,'Jamie Farrell','ZoneGame','Dunstone Cottage, Chester, 3DX-842, Cheshire UK','0044-325 32423'),
+(default,'Owen Moore','Cool Bitz','1 Brackenstown walk, Dundalk, Louth','081-124211'),
+(default,'Kiernan Flynn','BitzNBytez','34 Ballycoolin Heights, D15','None'),
+(default,'Ghazi Al-Aradi','Al-Duraz Games','Building 43, Road 1321, Manama, Kingdom of Bahrain','00973-235324342');
+INSERT INTO  customers(customerID,customerName,storeName,address,phone) VALUES (100,'Pauline Smith','Gamelife','11 Jamestown Court, Galway','081-4125215'), (default,'Peter Murphy','Pete''s Shack','The Laurels, Perrystown, Dublin 6W','082-9891234'), (default,'Brian McDermott','Electronics Extreme','31a Hamilton Court, Bray, Wicklow','080-1242412'), (default,'Frank Darcy','Gameland','12 Shop Street, Galway','081-124121'), (default,'Ron Hoey','Gamelife','31 Sallins View, Naas, Kildare','None'), (default,'Tracey Nolan','The Smart Store','1 Brookfield Close, Artane, D5','01-8212311'), (default,'Francoise Lideau','Les Artisans','23 Rue Des Martyrs, 5 Arrondissement, 34533 Paris, France','0033 123 83473'), (default,'Ronan O''Hare','Gamelife','312 Verbena Lawns, Bayside, Dublin','01-8231223'), (default,'Sean O''Connor','Sean O''Connor','The Cloisters, Dalkey Village Dublin','01-232233'), (default,'Sarah Phelin','Egame.com','Apt 232, Building 33, IFSC, D1','081-2141243'), (default,'Jamie Farrell','ZoneGame','Dunstone Cottage, Chester, 3DX-842, Cheshire UK','0044-325 32423'), (default,'Owen Moore','Cool Bitz','1 Brackenstown walk, Dundalk, Louth','081-124211'), (default,'Kiernan Flynn','BitzNBytez','34 Ballycoolin Heights, D15','None'), (default,'Ghazi Al-Aradi','Al-Duraz Games','Building 43, Road 1321, Manama, Kingdom of Bahrain','00973-235324342');
+select * from customers
+;7
+;
+select * from customers
+;
+desc sales
+;
+alter table sales modify column date date;
+;
+desc sales
+;
+alter table sales add [column] quantity int after customerID;
+alter table sales add column quantity int after customerID;
+desc sales;
+use crazyjoe
+INSERT INTO 
+sales(saleID,customerID,quantity,gameID,date,margin)
+VALUES
+(10000,'100','21','1005',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'10'),
+(default, '100','21','1005',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'10'),
+(default, '100','45','1000',STR_TO_DATE('5/09/2020','%e/%m/%Y'),'0'),
+(default, '100','55','1008',STR_TO_DATE('5/09/2020','%e/%m/%Y'),'10'),
+(default, '100','30','1003',STR_TO_DATE('5/09/2020','%e/%m/%Y'),'10'),
+(default, '100','35','1006',STR_TO_DATE('7/09/2020','%e/%m/%Y'),'10'),
+(default, '100','46','1001',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'10'),
+(default, '101','10','1004',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'0'),
+(default, '101','10','1000',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'10'),
+(default, '101','25','1010',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'10'),
+(default, '101','5','1008',STR_TO_DATE('10/09/2020','%e/%m/%Y'),'10'),
+(default, '101','10','1003',STR_TO_DATE('10/09/2020','%e/%m/%Y'),'0'),
+(default, '102','10','1004',STR_TO_DATE('10/09/2020','%e/%m/%Y'),'5'),
+(default, '102','10','1007',STR_TO_DATE('12/09/2020','%e/%m/%Y'),'0'),
+(default, '102','10','1006',STR_TO_DATE('12/09/2020','%e/%m/%Y'),'0'),
+(default, '102','35','1003',STR_TO_DATE('12/09/2020','%e/%m/%Y'),'5'),
+(default, '102','5','1000',STR_TO_DATE('14/09/2020','%e/%m/%Y'),'10'),
+(default, '103','25','1004',STR_TO_DATE('15/09/2020','%e/%m/%Y'),'10'),
+(default, '103','52','1010',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'0'),
+(default, '103','55','1003',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'5'),
+(default, '103','26','1005',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'0'),
+(default, '103','25','1008',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'0'),
+(default, '104','35','1007',STR_TO_DATE('19/09/2020','%e/%m/%Y'),'10'),
+(default, '104','30','1004',STR_TO_DATE('21/09/2020','%e/%m/%Y'),'0'),
+(default, '104','5','1001',STR_TO_DATE('21/09/2020','%e/%m/%Y'),'5'),
+(default, '104','35','1007',STR_TO_DATE('23/09/2020','%e/%m/%Y'),'10'),
+(default, '104','15','1003',STR_TO_DATE('25/09/2020','%e/%m/%Y'),'10'),
+(default, '105','10','1004',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'),
+(default, '105','10','1010',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'),
+(default, '105','23','1007',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'0'),
+(default, '105','10','1006',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'0'),
+(default, '105','46','1003',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'),
+(default, '106','5','1003',STR_TO_DATE('29/09/2020','%e/%m/%Y'),'10'),
+(default, '106','25','1010',STR_TO_DATE('30/09/2020','%e/%m/%Y'),'10'),
+(default, '106','5','1001',STR_TO_DATE('2/09/2020','%e/%m/%Y'),'0'),
+(default, '106','35','1010',STR_TO_DATE('2/09/2020','%e/%m/%Y'),'10'),
+(default, '106','20','1000',STR_TO_DATE('3/09/2020','%e/%m/%Y'),'10'),
+(default, '107','2','1001',STR_TO_DATE('3/09/2020','%e/%m/%Y'),'0'),
+(default, '107','3','1011',STR_TO_DATE('3/09/2020','%e/%m/%Y'),'10'),
+(default, '107','40','1001',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'0'),
+(default, '107','5','1005',STR_TO_DATE('6/09/2020','%e/%m/%Y'),'10'),
+(default, '107','15','1011',STR_TO_DATE('7/09/2020','%e/%m/%Y'),'5'),
+(default, '108','5','1010',STR_TO_DATE('7/09/2020','%e/%m/%Y'),'0'),
+(default, '108','3','1000',STR_TO_DATE('7/09/2020','%e/%m/%Y'),'5'),
+(default, '108','40','1000',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'10'),
+(default, '108','85','1006',STR_TO_DATE('11/09/2020','%e/%m/%Y'),'0'),
+(default, '108','30','1007',STR_TO_DATE('12/09/2020','%e/%m/%Y'),'5'),
+(default, '109','35','1001',STR_TO_DATE('13/09/2020','%e/%m/%Y'),'10'),
+(default, '109','5','1001',STR_TO_DATE('15/09/2020','%e/%m/%Y'),'0'),
+(default, '109','3','1005',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'10'),
+(default, '109','15','1007',STR_TO_DATE('19/09/2020','%e/%m/%Y'),'0'),
+(default, '109','5','1011',STR_TO_DATE('21/09/2020','%e/%m/%Y'),'5'),
+(default, '110','30','1010',STR_TO_DATE('21/09/2020','%e/%m/%Y'),'0'),
+(default, '110','45','1010',STR_TO_DATE('23/09/2020','%e/%m/%Y'),'0'),
+(default, '110','5','1010',STR_TO_DATE('25/09/2020','%e/%m/%Y'),'5'),
+(default, '110','2','1000',STR_TO_DATE('26/09/2020','%e/%m/%Y'),'0'),
+(default, '110','3','1011',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'),
+(default, '111','4','1002',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'0'),
+(default, '111','2','1007',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'),
+(default, '111','12','1000',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'0'),
+(default, '111','2','1001',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'),
+(default, '111','3','1001',STR_TO_DATE('29/09/2020','%e/%m/%Y'),'10'),
+(default, '112','2','1011',STR_TO_DATE('1/09/2020','%e/%m/%Y'),'10'),
+(default, '112','30','1001',STR_TO_DATE('1/09/2020','%e/%m/%Y'),'0'),
+(default, '112','10','1010',STR_TO_DATE('1/09/2020','%e/%m/%Y'),'0'),
+(default, '112','3','1004',STR_TO_DATE('2/09/2020','%e/%m/%Y'),'0'),
+(default, '112','50','1010',STR_TO_DATE('3/09/2020','%e/%m/%Y'),'0'),
+(default, '113','1','1001',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'0'),
+(default, '113','4','1003',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'10'),
+(default, '113','4','1006',STR_TO_DATE('6/09/2020','%e/%m/%Y'),'5'),
+(default, '113','5','1007',STR_TO_DATE('8/09/2020','%e/%m/%Y'),'5'),
+(default, '113','5','1008',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'5');
+INSERT INTO  sales(saleID,customerID,quantity,gameID,date,margin) VALUES (10000,'100','21','1005',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'10'), (default, '100','21','1005',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'10'), (default, '100','45','1000',STR_TO_DATE('5/09/2020','%e/%m/%Y'),'0'), (default, '100','55','1008',STR_TO_DATE('5/09/2020','%e/%m/%Y'),'10'), (default, '100','30','1003',STR_TO_DATE('5/09/2020','%e/%m/%Y'),'10'), (default, '100','35','1006',STR_TO_DATE('7/09/2020','%e/%m/%Y'),'10'), (default, '100','46','1001',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'10'), (default, '101','10','1004',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'0'), (default, '101','10','1000',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'10'), (default, '101','25','1010',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'10'), (default, '101','5','1008',STR_TO_DATE('10/09/2020','%e/%m/%Y'),'10'), (default, '101','10','1003',STR_TO_DATE('10/09/2020','%e/%m/%Y'),'0'), (default, '102','10','1004',STR_TO_DATE('10/09/2020','%e/%m/%Y'),'5'), (default, '102','10','1007',STR_TO_DATE('12/09/2020','%e/%m/%Y'),'0'), (default, '102','10','1006',STR_TO_DATE('12/09/2020','%e/%m/%Y'),'0'), (default, '102','35','1003',STR_TO_DATE('12/09/2020','%e/%m/%Y'),'5'), (default, '102','5','1000',STR_TO_DATE('14/09/2020','%e/%m/%Y'),'10'), (default, '103','25','1004',STR_TO_DATE('15/09/2020','%e/%m/%Y'),'10'), (default, '103','52','1010',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'0'), (default, '103','55','1003',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'5'), (default, '103','26','1005',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'0'), (default, '103','25','1008',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'0'), (default, '104','35','1007',STR_TO_DATE('19/09/2020','%e/%m/%Y'),'10'), (default, '104','30','1004',STR_TO_DATE('21/09/2020','%e/%m/%Y'),'0'), (default, '104','5','1001',STR_TO_DATE('21/09/2020','%e/%m/%Y'),'5'), (default, '104','5','1001',STR_TO_DATE('21/09/2020','%e/%m/%Y'),'5'), (default, '104','35','1007',STR_TO_DATE('23/09/2020','%e/%m/%Y'),'10'), (default, '104','15','1003',STR_TO_DATE('25/09/2020','%e/%m/%Y'),'10'), (default, '105','10','1004',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'), (default, '105','10','1010',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'), (default, '105','23','1007',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'0'), (default, '105','10','1006',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'0'), (default, '105','46','1003',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'), (default, '106','5','1003',STR_TO_DATE('29/09/2020','%e/%m/%Y'),'10'), (default, '106','25','1010',STR_TO_DATE('30/09/2020','%e/%m/%Y'),'10'), (default, '106','5','1001',STR_TO_DATE('2/09/2020','%e/%m/%Y'),'0'), (default, '106','35','1010',STR_TO_DATE('2/09/2020','%e/%m/%Y'),'10'), (default, '106','20','1000',STR_TO_DATE('3/09/2020','%e/%m/%Y'),'10'), (default, '107','2','1001',STR_TO_DATE('3/09/2020','%e/%m/%Y'),'0'), (default, '107','3','1011',STR_TO_DATE('3/09/2020','%e/%m/%Y'),'10'), (default, '107','40','1001',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'0'), (default, '107','5','1005',STR_TO_DATE('6/09/2020','%e/%m/%Y'),'10'), (default, '107','15','1011',STR_TO_DATE('7/09/2020','%e/%m/%Y'),'5'), (default, '108','5','1010',STR_TO_DATE('7/09/2020','%e/%m/%Y'),'0'), (default, '108','3','1000',STR_TO_DATE('7/09/2020','%e/%m/%Y'),'5'), (default, '108','40','1000',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'10'), (default, '108','85','1006',STR_TO_DATE('11/09/2020','%e/%m/%Y'),'0'), (default, '108','30','1007',STR_TO_DATE('12/09/2020','%e/%m/%Y'),'5'), (default, '109','35','1001',STR_TO_DATE('13/09/2020','%e/%m/%Y'),'10'), (default, '109','5','1001',STR_TO_DATE('15/09/2020','%e/%m/%Y'),'0'), (default, '109','3','1005',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'10'), (default, '109','15','1007',STR_TO_DATE('19/09/2020','%e/%m/%Y'),'0'), (default, '109','5','1011',STR_TO_DATE('21/09/2020','%e/%m/%Y'),'5'), (default, '110','30','1010',STR_TO_DATE('21/09/2020','%e/%m/%Y'),'0'), (default, '110','45','1010',STR_TO_DATE('23/09/2020','%e/%m/%Y'),'0'), (default, '110','5','1010',STR_TO_DATE('25/09/2020','%e/%m/%Y'),'5'), (default, '110','2','1000',STR_TO_DATE('26/09/2020','%e/%m/%Y'),'0'), (default, '110','3','1011',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'), (default, '111','4','1002',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'0'), (default, '111','2','1007',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'), (default, '111','12','1000',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'0'), (default, '111','2','1001',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'), (default, '111','3','1001',STR_TO_DATE('29/09/2020','%e/%m/%Y'),'10'), (default, '112','2','1011',STR_TO_DATE('1/09/2020','%e/%m/%Y'),'10'), (default, '112','30','1001',STR_TO_DATE('1/09/2020','%e/%m/%Y'),'0'), (default, '112','10','1010',STR_TO_DATE('1/09/2020','%e/%m/%Y'),'0'), (default, '112','3','1004',STR_TO_DATE('2/09/2020','%e/%m/%Y'),'0'), (default, '112','50','1010',STR_TO_DATE('3/09/2020','%e/%m/%Y'),'0'), (default, '113','1','1001',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'0'), (default, '113','4','1003',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'10'), (default, '113','4','1006',STR_TO_DATE('6/09/2020','%e/%m/%Y'),'5'), (default, '113','5','1007',STR_TO_DATE('8/09/2020','%e/%m/%Y'),'5'), (default, '113','5','1008',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'5');
+select * fromt games
+;
+select * from games
+;
+insert into games values ('1000', 'Game details unknown', 'n/a','n/a','n/a');
+insert into games values ('1000', 'Game details unknown', 'n'/a','n'/a','n'/a');
+insert into games values ('1000','Game details unknown', NULL, NULL, NULL);
+select * from games
+;
+INSERT INTO 
+sales(saleID,customerID,quantity,gameID,date,margin)
+VALUES
+(10000,'100','21','1005',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'10'),
+(default, '100','21','1005',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'10'),
+(default, '100','45','1000',STR_TO_DATE('5/09/2020','%e/%m/%Y'),'0'),
+(default, '100','55','1008',STR_TO_DATE('5/09/2020','%e/%m/%Y'),'10'),
+(default, '100','30','1003',STR_TO_DATE('5/09/2020','%e/%m/%Y'),'10'),
+(default, '100','35','1006',STR_TO_DATE('7/09/2020','%e/%m/%Y'),'10'),
+(default, '100','46','1001',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'10'),
+(default, '101','10','1004',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'0'),
+(default, '101','10','1000',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'10'),
+(default, '101','25','1010',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'10'),
+(default, '101','5','1008',STR_TO_DATE('10/09/2020','%e/%m/%Y'),'10'),
+(default, '101','10','1003',STR_TO_DATE('10/09/2020','%e/%m/%Y'),'0'),
+(default, '102','10','1004',STR_TO_DATE('10/09/2020','%e/%m/%Y'),'5'),
+(default, '102','10','1007',STR_TO_DATE('12/09/2020','%e/%m/%Y'),'0'),
+(default, '102','10','1006',STR_TO_DATE('12/09/2020','%e/%m/%Y'),'0'),
+(default, '102','35','1003',STR_TO_DATE('12/09/2020','%e/%m/%Y'),'5'),
+(default, '102','5','1000',STR_TO_DATE('14/09/2020','%e/%m/%Y'),'10'),
+(default, '103','25','1004',STR_TO_DATE('15/09/2020','%e/%m/%Y'),'10'),
+(default, '103','52','1010',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'0'),
+(default, '103','55','1003',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'5'),
+(default, '103','26','1005',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'0'),
+(default, '103','25','1008',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'0'),
+(default, '104','35','1007',STR_TO_DATE('19/09/2020','%e/%m/%Y'),'10'),
+(default, '104','30','1004',STR_TO_DATE('21/09/2020','%e/%m/%Y'),'0'),
+(default, '104','5','1001',STR_TO_DATE('21/09/2020','%e/%m/%Y'),'5'),
+(default, '104','35','1007',STR_TO_DATE('23/09/2020','%e/%m/%Y'),'10'),
+(default, '104','15','1003',STR_TO_DATE('25/09/2020','%e/%m/%Y'),'10'),
+(default, '105','10','1004',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'),
+(default, '105','10','1010',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'),
+(default, '105','23','1007',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'0'),
+(default, '105','10','1006',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'0'),
+(default, '105','46','1003',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'),
+(default, '106','5','1003',STR_TO_DATE('29/09/2020','%e/%m/%Y'),'10'),
+(default, '106','25','1010',STR_TO_DATE('30/09/2020','%e/%m/%Y'),'10'),
+(default, '106','5','1001',STR_TO_DATE('2/09/2020','%e/%m/%Y'),'0'),
+(default, '106','35','1010',STR_TO_DATE('2/09/2020','%e/%m/%Y'),'10'),
+(default, '106','20','1000',STR_TO_DATE('3/09/2020','%e/%m/%Y'),'10'),
+(default, '107','2','1001',STR_TO_DATE('3/09/2020','%e/%m/%Y'),'0'),
+(default, '107','3','1011',STR_TO_DATE('3/09/2020','%e/%m/%Y'),'10'),
+(default, '107','40','1001',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'0'),
+(default, '107','5','1005',STR_TO_DATE('6/09/2020','%e/%m/%Y'),'10'),
+(default, '107','15','1011',STR_TO_DATE('7/09/2020','%e/%m/%Y'),'5'),
+(default, '108','5','1010',STR_TO_DATE('7/09/2020','%e/%m/%Y'),'0'),
+(default, '108','3','1000',STR_TO_DATE('7/09/2020','%e/%m/%Y'),'5'),
+(default, '108','40','1000',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'10'),
+(default, '108','85','1006',STR_TO_DATE('11/09/2020','%e/%m/%Y'),'0'),
+(default, '108','30','1007',STR_TO_DATE('12/09/2020','%e/%m/%Y'),'5'),
+(default, '109','35','1001',STR_TO_DATE('13/09/2020','%e/%m/%Y'),'10'),
+(default, '109','5','1001',STR_TO_DATE('15/09/2020','%e/%m/%Y'),'0'),
+(default, '109','3','1005',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'10'),
+(default, '109','15','1007',STR_TO_DATE('19/09/2020','%e/%m/%Y'),'0'),
+(default, '109','5','1011',STR_TO_DATE('21/09/2020','%e/%m/%Y'),'5'),
+(default, '110','30','1010',STR_TO_DATE('21/09/2020','%e/%m/%Y'),'0'),
+(default, '110','45','1010',STR_TO_DATE('23/09/2020','%e/%m/%Y'),'0'),
+(default, '110','5','1010',STR_TO_DATE('25/09/2020','%e/%m/%Y'),'5'),
+(default, '110','2','1000',STR_TO_DATE('26/09/2020','%e/%m/%Y'),'0'),
+(default, '110','3','1011',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'),
+(default, '111','4','1002',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'0'),
+(default, '111','2','1007',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'),
+(default, '111','12','1000',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'0'),
+(default, '111','2','1001',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'),
+(default, '111','3','1001',STR_TO_DATE('29/09/2020','%e/%m/%Y'),'10'),
+(default, '112','2','1011',STR_TO_DATE('1/09/2020','%e/%m/%Y'),'10'),
+(default, '112','30','1001',STR_TO_DATE('1/09/2020','%e/%m/%Y'),'0'),
+(default, '112','10','1010',STR_TO_DATE('1/09/2020','%e/%m/%Y'),'0'),
+(default, '112','3','1004',STR_TO_DATE('2/09/2020','%e/%m/%Y'),'0'),
+(default, '112','50','1010',STR_TO_DATE('3/09/2020','%e/%m/%Y'),'0'),
+(default, '113','1','1001',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'0'),
+(default, '113','4','1003',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'10'),
+(default, '113','4','1006',STR_TO_DATE('6/09/2020','%e/%m/%Y'),'5'),
+(default, '113','5','1007',STR_TO_DATE('8/09/2020','%e/%m/%Y'),'5'),
+(default, '113','5','1008',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'5');
+INSERT INTO  sales(saleID,customerID,quantity,gameID,date,margin) VALUES (10000,'100','21','1005',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'10'), (default, '100','21','1005',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'10'), (default, '100','45','1000',STR_TO_DATE('5/09/2020','%e/%m/%Y'),'0'), (default, '100','55','1008',STR_TO_DATE('5/09/2020','%e/%m/%Y'),'10'), (default, '100','30','1003',STR_TO_DATE('5/09/2020','%e/%m/%Y'),'10'), (default, '100','35','1006',STR_TO_DATE('7/09/2020','%e/%m/%Y'),'10'), (default, '100','46','1001',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'10'), (default, '101','10','1004',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'0'), (default, '101','10','1000',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'10'), (default, '101','25','1010',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'10'), (default, '101','5','1008',STR_TO_DATE('10/09/2020','%e/%m/%Y'),'10'), (default, '101','10','1003',STR_TO_DATE('10/09/2020','%e/%m/%Y'),'0'), (default, '102','10','1004',STR_TO_DATE('10/09/2020','%e/%m/%Y'),'5'), (default, '102','10','1007',STR_TO_DATE('12/09/2020','%e/%m/%Y'),'0'), (default, '102','10','1006',STR_TO_DATE('12/09/2020','%e/%m/%Y'),'0'), (default, '102','35','1003',STR_TO_DATE('12/09/2020','%e/%m/%Y'),'5'), (default, '102','5','1000',STR_TO_DATE('14/09/2020','%e/%m/%Y'),'10'), (default, '103','25','1004',STR_TO_DATE('15/09/2020','%e/%m/%Y'),'10'), (default, '103','52','1010',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'0'), (default, '103','55','1003',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'5'), (default, '103','26','1005',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'0'), (default, '103','25','1008',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'0'), (default, '104','35','1007',STR_TO_DATE('19/09/2020','%e/%m/%Y'),'10'), (default, '104','30','1004',STR_TO_DATE('21/09/2020','%e/%m/%Y'),'0'), (default, '104','5','1001',STR_TO_DATE('21/09/2020','%e/%m/%Y'),'5'), (default, '104','5','1001',STR_TO_DATE('21/09/2020','%e/%m/%Y'),'5'), (default, '104','35','1007',STR_TO_DATE('23/09/2020','%e/%m/%Y'),'10'), (default, '104','15','1003',STR_TO_DATE('25/09/2020','%e/%m/%Y'),'10'), (default, '105','10','1004',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'), (default, '105','10','1010',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'), (default, '105','23','1007',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'0'), (default, '105','10','1006',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'0'), (default, '105','46','1003',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'), (default, '106','5','1003',STR_TO_DATE('29/09/2020','%e/%m/%Y'),'10'), (default, '106','25','1010',STR_TO_DATE('30/09/2020','%e/%m/%Y'),'10'), (default, '106','5','1001',STR_TO_DATE('2/09/2020','%e/%m/%Y'),'0'), (default, '106','35','1010',STR_TO_DATE('2/09/2020','%e/%m/%Y'),'10'), (default, '106','20','1000',STR_TO_DATE('3/09/2020','%e/%m/%Y'),'10'), (default, '107','2','1001',STR_TO_DATE('3/09/2020','%e/%m/%Y'),'0'), (default, '107','3','1011',STR_TO_DATE('3/09/2020','%e/%m/%Y'),'10'), (default, '107','40','1001',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'0'), (default, '107','5','1005',STR_TO_DATE('6/09/2020','%e/%m/%Y'),'10'), (default, '107','15','1011',STR_TO_DATE('7/09/2020','%e/%m/%Y'),'5'), (default, '108','5','1010',STR_TO_DATE('7/09/2020','%e/%m/%Y'),'0'), (default, '108','3','1000',STR_TO_DATE('7/09/2020','%e/%m/%Y'),'5'), (default, '108','40','1000',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'10'), (default, '108','85','1006',STR_TO_DATE('11/09/2020','%e/%m/%Y'),'0'), (default, '108','30','1007',STR_TO_DATE('12/09/2020','%e/%m/%Y'),'5'), (default, '109','35','1001',STR_TO_DATE('13/09/2020','%e/%m/%Y'),'10'), (default, '109','5','1001',STR_TO_DATE('15/09/2020','%e/%m/%Y'),'0'), (default, '109','3','1005',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'10'), (default, '109','15','1007',STR_TO_DATE('19/09/2020','%e/%m/%Y'),'0'), (default, '109','5','1011',STR_TO_DATE('21/09/2020','%e/%m/%Y'),'5'), (default, '110','30','1010',STR_TO_DATE('21/09/2020','%e/%m/%Y'),'0'), (default, '110','45','1010',STR_TO_DATE('23/09/2020','%e/%m/%Y'),'0'), (default, '110','5','1010',STR_TO_DATE('25/09/2020','%e/%m/%Y'),'5'), (default, '110','2','1000',STR_TO_DATE('26/09/2020','%e/%m/%Y'),'0'), (default, '110','3','1011',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'), (default, '111','4','1002',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'0'), (default, '111','2','1007',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'), (default, '111','12','1000',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'0'), (default, '111','2','1001',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'), (default, '111','3','1001',STR_TO_DATE('29/09/2020','%e/%m/%Y'),'10'), (default, '112','2','1011',STR_TO_DATE('1/09/2020','%e/%m/%Y'),'10'), (default, '112','30','1001',STR_TO_DATE('1/09/2020','%e/%m/%Y'),'0'), (default, '112','10','1010',STR_TO_DATE('1/09/2020','%e/%m/%Y'),'0'), (default, '112','3','1004',STR_TO_DATE('2/09/2020','%e/%m/%Y'),'0'), (default, '112','50','1010',STR_TO_DATE('3/09/2020','%e/%m/%Y'),'0'), (default, '113','1','1001',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'0'), (default, '113','4','1003',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'10'), (default, '113','4','1006',STR_TO_DATE('6/09/2020','%e/%m/%Y'),'5'), (default, '113','5','1007',STR_TO_DATE('8/09/2020','%e/%m/%Y'),'5'), (default, '113','5','1008',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'5');
+select * from sales;
+rollback;
+select * from sales;
+delete from sales where customerID=(100,101,102,103,104,105,106,107,108,109,110,111,112,112);
+delete from sales where customerID >= 100;
+select * from sales;
+INSERT INTO 
+sales(saleID,customerID,quantity,gameID,date,margin)
+VALUES
+(10000,'100','21','1005',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'10'),
+(10001, '100','21','1005',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'10'),
+(default, '100','45','1000',STR_TO_DATE('5/09/2020','%e/%m/%Y'),'0'),
+(default, '100','55','1008',STR_TO_DATE('5/09/2020','%e/%m/%Y'),'10'),
+(default, '100','30','1003',STR_TO_DATE('5/09/2020','%e/%m/%Y'),'10'),
+(default, '100','35','1006',STR_TO_DATE('7/09/2020','%e/%m/%Y'),'10'),
+(default, '100','46','1001',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'10'),
+(default, '101','10','1004',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'0'),
+(default, '101','10','1000',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'10'),
+(default, '101','25','1010',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'10'),
+(default, '101','5','1008',STR_TO_DATE('10/09/2020','%e/%m/%Y'),'10'),
+(default, '101','10','1003',STR_TO_DATE('10/09/2020','%e/%m/%Y'),'0'),
+(default, '102','10','1004',STR_TO_DATE('10/09/2020','%e/%m/%Y'),'5'),
+(default, '102','10','1007',STR_TO_DATE('12/09/2020','%e/%m/%Y'),'0'),
+(default, '102','10','1006',STR_TO_DATE('12/09/2020','%e/%m/%Y'),'0'),
+(default, '102','35','1003',STR_TO_DATE('12/09/2020','%e/%m/%Y'),'5'),
+(default, '102','5','1000',STR_TO_DATE('14/09/2020','%e/%m/%Y'),'10'),
+(default, '103','25','1004',STR_TO_DATE('15/09/2020','%e/%m/%Y'),'10'),
+(default, '103','52','1010',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'0'),
+(default, '103','55','1003',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'5'),
+(default, '103','26','1005',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'0'),
+(default, '103','25','1008',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'0'),
+(default, '104','35','1007',STR_TO_DATE('19/09/2020','%e/%m/%Y'),'10'),
+(default, '104','30','1004',STR_TO_DATE('21/09/2020','%e/%m/%Y'),'0'),
+(default, '104','5','1001',STR_TO_DATE('21/09/2020','%e/%m/%Y'),'5'),
+(default, '104','35','1007',STR_TO_DATE('23/09/2020','%e/%m/%Y'),'10'),
+(default, '104','15','1003',STR_TO_DATE('25/09/2020','%e/%m/%Y'),'10'),
+(default, '105','10','1004',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'),
+(default, '105','10','1010',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'),
+(default, '105','23','1007',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'0'),
+(default, '105','10','1006',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'0'),
+(default, '105','46','1003',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'),
+(default, '106','5','1003',STR_TO_DATE('29/09/2020','%e/%m/%Y'),'10'),
+(default, '106','25','1010',STR_TO_DATE('30/09/2020','%e/%m/%Y'),'10'),
+(default, '106','5','1001',STR_TO_DATE('2/09/2020','%e/%m/%Y'),'0'),
+(default, '106','35','1010',STR_TO_DATE('2/09/2020','%e/%m/%Y'),'10'),
+(default, '106','20','1000',STR_TO_DATE('3/09/2020','%e/%m/%Y'),'10'),
+(default, '107','2','1001',STR_TO_DATE('3/09/2020','%e/%m/%Y'),'0'),
+(default, '107','3','1011',STR_TO_DATE('3/09/2020','%e/%m/%Y'),'10'),
+(default, '107','40','1001',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'0'),
+(default, '107','5','1005',STR_TO_DATE('6/09/2020','%e/%m/%Y'),'10'),
+(default, '107','15','1011',STR_TO_DATE('7/09/2020','%e/%m/%Y'),'5'),
+(default, '108','5','1010',STR_TO_DATE('7/09/2020','%e/%m/%Y'),'0'),
+(default, '108','3','1000',STR_TO_DATE('7/09/2020','%e/%m/%Y'),'5'),
+(default, '108','40','1000',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'10'),
+(default, '108','85','1006',STR_TO_DATE('11/09/2020','%e/%m/%Y'),'0'),
+(default, '108','30','1007',STR_TO_DATE('12/09/2020','%e/%m/%Y'),'5'),
+(default, '109','35','1001',STR_TO_DATE('13/09/2020','%e/%m/%Y'),'10'),
+(default, '109','5','1001',STR_TO_DATE('15/09/2020','%e/%m/%Y'),'0'),
+(default, '109','3','1005',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'10'),
+(default, '109','15','1007',STR_TO_DATE('19/09/2020','%e/%m/%Y'),'0'),
+(default, '109','5','1011',STR_TO_DATE('21/09/2020','%e/%m/%Y'),'5'),
+(default, '110','30','1010',STR_TO_DATE('21/09/2020','%e/%m/%Y'),'0'),
+(default, '110','45','1010',STR_TO_DATE('23/09/2020','%e/%m/%Y'),'0'),
+(default, '110','5','1010',STR_TO_DATE('25/09/2020','%e/%m/%Y'),'5'),
+(default, '110','2','1000',STR_TO_DATE('26/09/2020','%e/%m/%Y'),'0'),
+(default, '110','3','1011',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'),
+(default, '111','4','1002',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'0'),
+(default, '111','2','1007',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'),
+(default, '111','12','1000',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'0'),
+(default, '111','2','1001',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'),
+(default, '111','3','1001',STR_TO_DATE('29/09/2020','%e/%m/%Y'),'10'),
+(default, '112','2','1011',STR_TO_DATE('1/09/2020','%e/%m/%Y'),'10'),
+(default, '112','30','1001',STR_TO_DATE('1/09/2020','%e/%m/%Y'),'0'),
+(default, '112','10','1010',STR_TO_DATE('1/09/2020','%e/%m/%Y'),'0'),
+(default, '112','3','1004',STR_TO_DATE('2/09/2020','%e/%m/%Y'),'0'),
+(default, '112','50','1010',STR_TO_DATE('3/09/2020','%e/%m/%Y'),'0'),
+(default, '113','1','1001',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'0'),
+(default, '113','4','1003',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'10'),
+(default, '113','4','1006',STR_TO_DATE('6/09/2020','%e/%m/%Y'),'5'),
+(default, '113','5','1007',STR_TO_DATE('8/09/2020','%e/%m/%Y'),'5'),
+(default, '113','5','1008',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'5');
+INSERT INTO  sales(saleID,customerID,quantity,gameID,date,margin) VALUES (10000,'100','21','1005',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'10'), (10001, '100','21','1005',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'10'), (default, '100','45','1000',STR_TO_DATE('5/09/2020','%e/%m/%Y'),'0'), (default, '100','55','1008',STR_TO_DATE('5/09/2020','%e/%m/%Y'),'10'), (default, '100','30','1003',STR_TO_DATE('5/09/2020','%e/%m/%Y'),'10'), (default, '100','35','1006',STR_TO_DATE('7/09/2020','%e/%m/%Y'),'10'), (default, '100','46','1001',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'10'), (default, '101','10','1004',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'0'), (default, '101','10','1000',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'10'), (default, '101','25','1010',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'10'), (default, '101','5','1008',STR_TO_DATE('10/09/2020','%e/%m/%Y'),'10'), (default, '101','10','1003',STR_TO_DATE('10/09/2020','%e/%m/%Y'),'0'), (default, '102','10','1004',STR_TO_DATE('10/09/2020','%e/%m/%Y'),'5'), (default, '102','10','1007',STR_TO_DATE('12/09/2020','%e/%m/%Y'),'0'), (default, '102','10','1006',STR_TO_DATE('12/09/2020','%e/%m/%Y'),'0'), (default, '102','35','1003',STR_TO_DATE('12/09/2020','%e/%m/%Y'),'5'), (default, '102','5','1000',STR_TO_DATE('14/09/2020','%e/%m/%Y'),'10'), (default, '103','25','1004',STR_TO_DATE('15/09/2020','%e/%m/%Y'),'10'), (default, '103','52','1010',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'0'), (default, '103','55','1003',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'5'), (default, '103','26','1005',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'0'), (default, '103','25','1008',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'0'), (default, '104','35','1007',STR_TO_DATE('19/09/2020','%e/%m/%Y'),'10'), (default, '104','30','1004',STR_TO_DATE('21/09/2020','%e/%m/%Y'),'0'), (default, '104','5','1001',STR_TO_DATE('21/09/2020','%e/%m/%Y'),'5'), (default, '104','5','1001',STR_TO_DATE('21/09/2020','%e/%m/%Y'),'5'), (default, '104','35','1007',STR_TO_DATE('23/09/2020','%e/%m/%Y'),'10'), (default, '104','15','1003',STR_TO_DATE('25/09/2020','%e/%m/%Y'),'10'), (default, '105','10','1004',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'), (default, '105','10','1010',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'), (default, '105','23','1007',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'0'), (default, '105','10','1006',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'0'), (default, '105','46','1003',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'), (default, '106','5','1003',STR_TO_DATE('29/09/2020','%e/%m/%Y'),'10'), (default, '106','25','1010',STR_TO_DATE('30/09/2020','%e/%m/%Y'),'10'), (default, '106','5','1001',STR_TO_DATE('2/09/2020','%e/%m/%Y'),'0'), (default, '106','35','1010',STR_TO_DATE('2/09/2020','%e/%m/%Y'),'10'), (default, '106','20','1000',STR_TO_DATE('3/09/2020','%e/%m/%Y'),'10'), (default, '107','2','1001',STR_TO_DATE('3/09/2020','%e/%m/%Y'),'0'), (default, '107','3','1011',STR_TO_DATE('3/09/2020','%e/%m/%Y'),'10'), (default, '107','40','1001',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'0'), (default, '107','5','1005',STR_TO_DATE('6/09/2020','%e/%m/%Y'),'10'), (default, '107','15','1011',STR_TO_DATE('7/09/2020','%e/%m/%Y'),'5'), (default, '108','5','1010',STR_TO_DATE('7/09/2020','%e/%m/%Y'),'0'), (default, '108','3','1000',STR_TO_DATE('7/09/2020','%e/%m/%Y'),'5'), (default, '108','40','1000',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'10'), (default, '108','85','1006',STR_TO_DATE('11/09/2020','%e/%m/%Y'),'0'), (default, '108','30','1007',STR_TO_DATE('12/09/2020','%e/%m/%Y'),'5'), (default, '109','35','1001',STR_TO_DATE('13/09/2020','%e/%m/%Y'),'10'), (default, '109','5','1001',STR_TO_DATE('15/09/2020','%e/%m/%Y'),'0'), (default, '109','3','1005',STR_TO_DATE('17/09/2020','%e/%m/%Y'),'10'), (default, '109','15','1007',STR_TO_DATE('19/09/2020','%e/%m/%Y'),'0'), (default, '109','5','1011',STR_TO_DATE('21/09/2020','%e/%m/%Y'),'5'), (default, '110','30','1010',STR_TO_DATE('21/09/2020','%e/%m/%Y'),'0'), (default, '110','45','1010',STR_TO_DATE('23/09/2020','%e/%m/%Y'),'0'), (default, '110','5','1010',STR_TO_DATE('25/09/2020','%e/%m/%Y'),'5'), (default, '110','2','1000',STR_TO_DATE('26/09/2020','%e/%m/%Y'),'0'), (default, '110','3','1011',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'), (default, '111','4','1002',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'0'), (default, '111','2','1007',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'), (default, '111','12','1000',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'0'), (default, '111','2','1001',STR_TO_DATE('27/09/2020','%e/%m/%Y'),'10'), (default, '111','3','1001',STR_TO_DATE('29/09/2020','%e/%m/%Y'),'10'), (default, '112','2','1011',STR_TO_DATE('1/09/2020','%e/%m/%Y'),'10'), (default, '112','30','1001',STR_TO_DATE('1/09/2020','%e/%m/%Y'),'0'), (default, '112','10','1010',STR_TO_DATE('1/09/2020','%e/%m/%Y'),'0'), (default, '112','3','1004',STR_TO_DATE('2/09/2020','%e/%m/%Y'),'0'), (default, '112','50','1010',STR_TO_DATE('3/09/2020','%e/%m/%Y'),'0'), (default, '113','1','1001',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'0'), (default, '113','4','1003',STR_TO_DATE('4/09/2020','%e/%m/%Y'),'10'), (default, '113','4','1006',STR_TO_DATE('6/09/2020','%e/%m/%Y'),'5'), (default, '113','5','1007',STR_TO_DATE('8/09/2020','%e/%m/%Y'),'5'), (default, '113','5','1008',STR_TO_DATE('9/09/2020','%e/%m/%Y'),'5');
+select * from sales;
+delete from sales where customerID >= 100;
+show variables like 'auto_inc%';
+SHOW VARIABLES LIKE "%group_replication_auto_increment_increment%";
+exit
+use crazyjoe
+load data infile 'var/www/html/crazyjoe/sales/csv
+into table sales
+fields terminated by ','
+enclosed by '''
+lines terminated by '\134n'
+ignore 1 rows;
+load data infile 'var/www/html/crazyjoe/sales/csv\012into table sales\012fields terminated by ','\012enclosed by ''' lines terminated by '\134n' ignore 1 rows;
+exit
+use crazyjoe
+load data infile 'var/www/html/crazyjoe/sales.csv
+into table sales
+fields terminated by ','
+enclosed by '"'
+lines terminated by '\134n'
+ignore 1 rows;
+load data infile 'var/www/html/crazyjoe/sales.csv'
+into table sales
+fields terminated by ','
+enclosed by '"'
+lines terminated by '\134n'
+ignore 1 rows;
+load data infile 'var/www/html/crazyjoe/sales.csv' into table sales fields terminated by ',' enclosed by '"' lines terminated by '\134n' ignore 1 rows;
+show variables like 'secure_file_priv';
+exit
+show variables
+;
+exit
+load data infile 'var/www/html/crazyjoe/sales.csv' into table sales fields terminated by ',' enclosed by '"' lines terminated by '\134n' ignore 1 rows;
+use crazyjoe
+load data infile 'var/www/html/crazyjoe/sales.csv' into table sales fields terminated by ',' enclosed by '"' lines terminated by '\134n' ignore 1 rows;
+exit
+show variables like 'secure_file_priv';
+use crazyjoe
+load data infile 'var/www/html/crazyjoe/sales.csv' into table sales fields terminated by ',' enclosed by '"' lines terminated by '\134n' ignore 1 rows;
+load local data infile 'var/www/html/crazyjoe/sales.csv' into table sales fields terminated by ',' enclosed by '"' lines terminated by '\134n' ignore 1 rows;
+load data local infile 'var/www/html/crazyjoe/sales.csv' into table sales fields terminated by ',' enclosed by '"' lines terminated by '\134n' ignore 1 rows;
+exit
+use crazyjoe
+load data local infile '/var/www/html/crazyjoe/sales.csv' into table sales fields terminated by ',' enclosed by '"' lines terminated by '\134n' ignore 1 rows;
+select * from sales
+;
+delete from sales where customerID >= 100;
+select * from sales
+;
+delete from sales where customerID=10002;
+delete from sales where saleID=10002;
+exit
+use crazyjoe
+load data local infile '/var/www/html/crazyjoe/sales.csv' 
+into table sales fields 
+terminated by ',' 
+enclosed by '"' lines 
+terminated by '\134n' 
+ignore 1 rows
+set date = STR_TO_DATE(@date,'%e/%m/%Y');
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n'  ignore 1 rows set date = STR_TO_DATE(@date,'%e/%m/%Y');
+select * fromt sales
+;
+select * from sales;
+delete from sales where customerID >= 100;
+select * from sales;
+load data local infile '/var/www/html/crazyjoe/sales.csv' 
+into table sales fields 
+terminated by ',' 
+enclosed by '"' lines 
+terminated by '\134n\134r' 
+ignore 1 rows
+set date = STR_TO_DATE(@date,'%e/%m/%Y');
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n\134r'  ignore 1 rows set date = STR_TO_DATE(@date,'%e/%m/%Y');
+exit
+use crazyjoe
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n'  ignore 1 rows set date = STR_TO_DATE(@date,'%e/%m/%Y');
+delete from sales where customerID >= 100;
+select * from sales;
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n'  ignore 1 rows set date = STR_TO_DATE(@date,'%e/%m/%Y');
+show warnings;
+exit
+use crazyjoe
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n'  ignore 1 rows set date = STR_TO_DATE(@date,'%e/%m/%Y');
+select * from sales;
+delete from sales where customerID >= 100;
+select * from sales;
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n'  ignore 1 rows set date = STR_TO_DATE(date,'%e/%m/%Y');
+select * from sales;
+delete from sales where customerID >= 100;
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n'  ignore 1 rows;
+update sales set date = STR_TO_DATE(date,'%e/%m/%Y');
+update sales set date = STR_TO_DATE(@date,'%e/%m/%Y');
+select * from sales;
+delete from sales where customerID >= 100;
+show warnings;
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n'  ignore 1 rows;
+show warnings;
+delete from sales where customerID >= 100;
+select * from sales;
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n'  ignore 1 rows;
+show warnings;
+delete from sales where customerID >= 100;
+select * from sales;
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n'  ignore 1 rows;
+show warnings;
+select * from sales;
+delete from sales where customerID >= 100;
+select * from sales;
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n'  ignore 1 rows;
+show warnings;
+select * from sales;
+delete from sales where customerID >= 100;
+select * from sales;
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n'  ignore 1 rows;
+select * from sales;
+update sales set date = STR_TO_DATE(date,'%e/%m/%Y');
+update sales set date = STR_TO_DATE(@date,'%e/%m/%Y');
+select * from sales;
+delete from sales where customerID >= 100;
+select * from sales;
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n'  ignore 1 rows;
+update sales set date = STR_TO_DATE(@date,'%e/%m/%Y');
+select * from sales;
+update sales set date = STR_TO_DATE(date,'%e/%m/%Y');
+delete from sales where customerID >= 100;
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n'  ignore 1 rows;
+update sales set date = STR_TO_DATE(date,'%e/%m/%Y');
+delete from sales where customerID >= 100;
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n'  ignore 1 rows;
+select * from sales;
+update sales set date = STR_TO_DATE(date,"%e/%m/%Y");
+update sales set date = STR_TO_DATE(@date,"%e/%m/%Y");
+select * from sales;
+delete from sales where customerID >= 100;
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n'  ignore 1 rows;
+update sales set date = STR_TO_DATE('date',"%e/%m/%Y");
+update sales set date = STR_TO_DATE("date","%e/%m/%Y");
+update sales set date = STR_TO_DATE(date,"%e/%m/%Y");
+update sales set date = STR_TO_DATE(@date,"%e/%m/%Y");
+select * from sales;
+select date from sales
+;
+mysql_query("update sales set date=STR_TO_DATE(date,'%e/%m/%Y');
+mysql_query("update sales set date=STR_TO_DATE(date,'%e/%m/%Y')");
+mysql_query("update sales set date=STR_TO_DATE(@date,'%e/%m/%Y')");
+update sales set date=STR_TO_DATE(@date,'%e/%m/%Y');
+update sales set date=STR_TO_DATE(date,'%e/%m/%Y');
+select * from sales;
+delete from sales where customerID >= 100;
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n'  ignore 1 rows;
+show warnings;
+desc sales;
+update sales set date DATE_FORMAT(date,'%e/%m/%Y');
+update sales set date DATE_FORMAT("date",'%e/%m/%Y');
+select DATE_FORMAT("date",'%e/%m/%Y');
+select date from sales date_format("date",'%e/%m/%Y');
+select date from sales date_format(date,'%e/%m/%Y');
+select date from sales date_format('date','%e/%m/%Y');
+select DATE_FORMAT("date",'%e/%m/%Y') from sales;
+delete from sales where customerID >= 100;
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n'  ignore 1 rows;
+select DATE_FORMAT("date",'%e/%m/%Y') from sales;
+show warnings;
+delete from sales where customerID >= 100;
+load data local infile '/var/www/html/crazyjoe/sales.csv' 
+into table sales fields 
+terminated by ',' 
+enclosed by '"' lines 
+terminated by '\134n\134r' 
+ignore 1 rows
+set date = STR_TO_DATE(date,'%e/%m/%Y');
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n\134r'  ignore 1 rows set date = STR_TO_DATE(date,'%e/%m/%Y');
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n'  ignore 1 rows set date = STR_TO_DATE(date,'%e/%m/%Y');
+show warnings;
+delete from sales where customerID >= 100;
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n'  ignore 1 rows set date = STR_TO_DATE('date,%e/%m/%Y');
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n'  ignore 1 rows set date = STR_TO_DATE('date','%e/%m/%Y');
+show warnings;
+delete from sales where customerID >= 100;
+load data local infile '/var/www/html/crazyjoe/sales.csv' 
+into table sales fields 
+terminated by ',' 
+enclosed by '"' lines 
+terminated by '\134n\134r' 
+ignore 1 rows
+set date = STR_TO_DATE(@date,'%e/%m/%Y');
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n\134r'  ignore 1 rows set date = STR_TO_DATE(@date,'%e/%m/%Y');
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n'  ignore 1 rows set date = STR_TO_DATE(@date,'%e/%m/%Y');
+show warnings;
+delete from sales where customerID >= 100;
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n'  ignore 1 rows set date = STR_TO_DATE(@date,'%e/%m/%Y');
+delete from sales where customerID >= 100;
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n'  ignore 1 rows set date = STR_TO_DATE(@date,'%e/%m/%Y');
+select * from sales;
+delete from sales where customerID >= 100;
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n'  ignore 1 rows set date = STR_TO_DATE(@date,'%e/%m/%Y');
+select * from sales;
+delete from sales where customerID >= 100;
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales fields  terminated by ','  enclosed by '"' lines  terminated by '\134n'  ignore 1 rows set date = STR_TO_DATE(@date,'%e/%m/%Y');
+show warnings;
+delete from sales where customerID >= 100;
+select * from sales;
+delete from sales where customerID >= 100;
+select * from sales;
+load data local infile '/var/www/html/crazyjoe/sales.csv' 
+into table sales 
+fields terminated by ',' 
+lines terminated by '\134n' 
+ignore 1 rows
+(saleID,customerID,quantity,gameID,@date,margin)
+set date = STR_TO_DATE(@date,'%e/%m/%Y');
+load data local infile '/var/www/html/crazyjoe/sales.csv'  into table sales  fields terminated by ','  lines terminated by '\134n'  ignore 1 rows (saleID,customerID,quantity,gameID,@date,margin) set date = STR_TO_DATE(@date,'%e/%m/%Y');
+select * from sales;
+show warnings;
+select * from sales;
+exit
+use crazyjoe
+select * from sales order by quantity;
+exit
+use crazyjoe
+select * from sales
+;
+select games.gameName from games,sales where games.gameID = sales.gameID order by sales.quantity desc;
+select games.gameName, games.gameID, sales.quantity from games,sales where games.gameID = sales.gameID order by sales.quantity desc;
+$gameResult=mysqli_query($conn,'select games.gameName from games,sales, sum(quantity) from sales group by gameID where games.gameID = sales.gameID order by sales.quantity desc limit 5');
+$gameResult=mysqli_query($conn,'select games.gameName from games,sales sum(quantity) from sales group by gameID where games.gameID = sales.gameID order by sales.quantity desc limit 5');
+select games.gameName from games,sales sum(quantity) from sales group by gameID where games.gameID = sales.gameID order by sales.quantity desc limit 5;
+select games.gameName from games,sales sum(quantity) from sales group by gameID where games.gameID = sales.gameID;
+select games.gameName from games,sales sum(sales.quantity) from sales group by sales.gameID where games.gameID = sales.gameID;
+select games.gameName from games, sales,sum(sales.quantity) from sales group by sales.gameID;
+select games.gameName from games, sales,sum(quantity) from sales group by sales.gameID;
+select games.gameName,sum(sales.quantity) from sales,games group by sales.gameID;
+select games.gameName,sum(sales.quantity) from sales,games group by sales.gameID where games.gameID = sales.gameID;
+select sales.gameID,sum(sales.quantity) from sales group by sales.gameID;
+select sales.gameID,sum(sales.quantity) from sales group by sales.gameID order by sum desc;
+select sales.gameID,sum(sales.quantity) from sales group by sales.gameID order by quantity desc;
+select sales.gameID,sum(sales.quantity) from sales group by sales.gameID order by sales.quantity desc;
+select sales.gameID,sum(sales.quantity) from sales group by sales.gameID order by sum(sales.quantity) desc;
+select games.gameName,sales.gameID,sum(sales.quantity) from sales group by sales.gameID order by sum(sales.quantity) desc where games.gameName=sales.gameName;
+select games.gameName,sales.gameID,sum(sales.quantity) from sales group by sales.gameID order by sum(sales.quantity) desc where games.gameID=sales.gameID;
+select sales.gameID,sum(sales.quantity) from sales group by sales.gameID order by sum(sales.quantity) desc;
+select games.gameName,sales.gameID,sum(sales.quantity) from sales,games group by sales.gameID order by sum(sales.quantity) desc where games.gameID=sales.gameID;
+select games.gameName,sales.gameID,sum(sales.quantity) from games,sales group by sales.gameID order by sum(sales.quantity) desc where games.gameID=sales.gameID;
+select sales.gameID,sum(sales.quantity) from sales group by sales.gameID order by sum(sales.quantity) desc;
+select sales.gameID from sales group by sales.gameID order by sum(sales.quantity) desc;
+select games.gameName from games,sales group by sales.gameID order by sum(sales.quantity) desc where games.gameID=sales.gameID;
+select * from games;
+select * from sales'
+select * from sales;
+select sales.gameID from sales group by sales.gameID order by sum(sales.quantity) desc;
+select games.gameName from games,sales group by sales.gameID order by sum(sales.quantity) desc;
+select sales.gameID from sales group by sales.gameID order by sum(sales.quantity) desc;
+select sales.gameID,sum(sales.quantity) from sales group by sales.gameID order by sum(sales.quantity) desc;
+select games.gameName from games group by sales.gameID order by sum(sales.quantity) desc;
+select games.gameName from games,sales group by sales.gameID order by sum(sales.quantity) desc;
+select games.gameName from games,sales group by sales.gameID order by sum(sales.quantity) desc where sales.gameID=games.gameID;
+select games.gameName from games,sales group by sales.gameID order by sum(sales.quantity) desc;
+select games.gameName from games group by sales.gameID order by sum(sales.quantity) desc;
+select sales.gameID,sum(sales.quantity) from sales group by sales.gameID order by sum(sales.quantity) desc;
+select gameID from games where exists (select gameID,sum(sales.quantity) from sales group by sales.gameID order by sum(sales.quantity) desc where games.gameID=sales.gameID);
+select games.gameName from games group by sales.gameID order by sum(sales.quantity) desc;
+select games.gameName from games,sales group by sales.gameID order by sum(sales.quantity) desc;
+select sales.gameID,sum(sales.quantity) from sales group by sales.gameID order by sum(sales.quantity)
+desc;
+select sales.gameID,sum(sales.quantity) from sales group by sales.gameID order by sum(sales.quantity) desc;
+select gameID from sales group by sales.gameID order by sum(sales.quantity) desc;
+select games.gameName from games join (select sales.gameID,sum(sales.quantity) from sales group by sales.gameID order by sum(sales.quantity)
+desc;
+select games.gameName from games join (select sales.gameID,sum(sales.quantity) from sales group by sales.gameID order by sum(sales.quantity) desc;
+select games.gameName from games join (select sales.gameID,sum(sales.quantity) from sales group by sales.gameID order by sum(sales.quantity) desc);
+select games.gameName from games join (select sales.gameID,sum(sales.quantity) from sales group by sales.gameID order by sum(sales.quantity) desc)sub ;
+select games.gameName from games (select sales.gameID,sum(sales.quantity) from sales group by sales.gameID order by sum(sales.quantity) desc)sub ;
+select g.gameName from games;
+select sales.gameID,sum(sales.quantity) from sales group by sales.gameID order by sum(sales.quantity) desc;
+select games.gameName,sales.gameID,sum(sales.quantity) from games,sales group by sales.gameID order by sum(sales.quantity) desc;
+select sales.gameID,sum(sales.quantity) from sales group by sales.gameID order by sum(sales.quantity) desc;
+select games.gameName,sales.gameID,sum(sales.quantity) from games,sales group by sales.gameID order by sum(sales.quantity) desc;
+select sales.gameID,sum(sales.quantity) from sales group by sales.gameID order by sum(sales.quantity) desc;
+select games.gameName,sales.gameID,sum(sales.quantity) from games,sales group by sales.gameID order by sum(sales.quantity) desc where games.gameID = sales.gameID;
+select games.gameID
+from games,sales
+select games.gameName
+from games
+inner join sales
+group by sales.gameID
+order by sum(sales.quantity) desc;
+select games.gameName from games inner join sales group by sales.gameID order by sum(sales.quantity) desc;
+select games.gameName from games inner join sales group by sales.gameID order by sum(sales.quantity) desc where games.gameID=sales.gameID;
+select g.gameName
+from games g
+innerjoin sales s using (gameID);
+select g.gameName from games g innerjoin sales s using (gameID);
+select g.gameName from games g inner join sales s using (gameID);
+select g.gameName from games g inner join sales s using (gameID) group by s.gameID order by sum(s.quantity) desc;
+exit
+use crazyjoe
+select g.gameName from games g inner join sales s using (gameID) group by s.gameID order by sum(s.quantity) desc;
+exit
+use crazyjoe
+select g.gameName from games g inner join sales s using (gameID) group by s.gameID order by sum(s.quantity) desc;
+set @row_number=0;
+SELECT 
+    (@row_number:=@row_number + 1) AS num, gameName from games limit 5;
+SELECT      (@row_number:=@row_number + 1) AS num, gameName from games limit 5;
+set @row_number=0; select (@row_number:=@row_number+1) as num, g.gameName from games g inner join sales s using (gameID) group by s.gameID order by sum(s.quantity) desc;
+select g.gameName from games g inner join sales s using (gameID) group by s.gameID order by sum(s.quantity) desc; set @row_number=0; select (@row_number:=@row_number+1) as num;
+select g.gameName from games g inner join sales s using (gameID) group by s.gameID order by sum(s.quantity) desc, set @row_number=0; select (@row_number:=@row_number+1) as num;
+set @row_number=0; select (@row_number:=@row_number+1) as num, sum(s.quantity), g.gameName from games g inner join sales s using (gameID) group by s.gameID order by sum(s.quantity) desc;
+set @row_number=0; select (@row_number:=@row_number+1) as num, sum(s.quantity); g.gameName from games g inner join sales s using (gameID) group by s.gameID order by sum(s.quantity) desc;
+desc games;
+desc sales
+;
+select g.gameName from games g inner join sales s using (gameID) group by s.gameID order by sum(s.quantity) desc; set @row_number=0; select (@row_number:=@row_number+1) as num;
+set @row_number=0; select (@row_number:=@row_number+1) as num, g.gameName from games g inner join sales s using (gameID) group by s.gameID order by sum(s.quantity) desc;
+set @row_number=0; select @row_number:=@row_number+1 from (select g.gameName from games g inner join sales s using (gameID) group by s.gameID order by sum(s.quantity) desc);
+set @row_number=0; select (@row_number:=@row_number+1) as num from (select g.gameName from games g inner join sales s using (gameID) group by s.gameID order by sum(s.quantity) desc);
+set @row_number=0; select (@row_number:=@row_number+1) as num from (select g.gameName from games g inner join sales s using (gameID) group by s.gameID) order by sum(s.quantity) desc;
+set @row_number=0; select @row_number:=@row_number+1 from (select g.gameName from games g inner join sales s using (gameID) group by s.gameID order by sum(s.quantity) desc);
+set @row_number=0; select (@row_number:=@row_number+1) as num, g.gameName from games g inner join sale
+s s using (gameID) group by s.gameID order by sum(s.quantity) desc;
+select (@row_number:=@row_number+1) as num, g.gameName from games g inner join sale s s using (gameID) group by s.gameID order by sum(s.quantity) desc;
+set @row_number=0; select (@row_number:=@row_number+1) as num, g.gameName from games g inner join sale
+s s using (gameID) group by s.gameID order by sum(s.quantity) desc;
+select (@row_number:=@row_number+1) as num, g.gameName from games g inner join sale s s using (gameID) group by s.gameID order by sum(s.quantity) desc;
+set @row_number=0; select (@row_number:=@row_number+1) as num, g.gameName from games g inner join sale
+s s using (gameID) group by s.gameID order by sum(s.quantity) desc;
+select (@row_number:=@row_number+1) as num, g.gameName from games g inner join sale s s using (gameID) group by s.gameID order by sum(s.quantity) desc;
+exit
+use crazyjoe
+desc games;
+exit
+use crazyjoe
+desc consoles
+;
+exit
+use adaptations
+show tables
+;
+set @row_number=0; select (@row_number:=@row_number+1) as num, g.gameName from games g inner join sales s using (gameID) group by s.gameID order by sum(s.quantity) desc;

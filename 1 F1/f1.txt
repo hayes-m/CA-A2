@@ -1,0 +1,52 @@
+_HiStOrY_V2_
+create database f1;
+use f1;
+create table teams (
+name varchar(20),
+country varchar (2),
+manager varchar (20),
+year int);
+create table teams ( name varchar(20), country varchar (2), manager varchar (20), year int);
+desc f1.teams;
+insert into teams values(
+'Ferrari',
+'IT',
+'Mattia Binotto',
+1950);
+insert into teams values( 'Ferrari', 'IT', 'Mattia Binotto', 1950);
+desc f1.teams;
+insert into teams values(
+'Mercedes','DE','Toto Wolff',1954);
+insert into teams values( 'Mercedes','DE','Toto Wolff',1954);
+insert into teams values(
+'Alfa Romeo','CH','Frederic Vasseur',1993);
+insert into teams values( 'Alfa Romeo','CH','Frederic Vasseur',1993);
+insert into teams values(
+'Red Bull','AT','Christian Horner',2005);
+insert into teams values( 'Red Bull','AT','Christian Horner',2005);
+insert into teams values(
+'Williams','GB','Simon Roberts',1978);
+insert into teams values( 'Williams','GB','Simon Roberts',1978);
+select * from teams;
+select year from teams;
+select * from teams ORDER BY year
+year
+exit
+select * from teams ORDER BY year;
+select * from teams ORDER BY year DEC;
+select * from teams ORDER BY year DE;
+select * from teams ORDER BY year DESC;
+select name,country from teams WHERE year>1967;
+update teams set 'GB'='UK';
+update teams
+set country='UK'
+where country='GB';
+update teams set country='UK' where country='GB';
+select * from teams ORDER BY year;
+insert into teams values( 'Jordan','IE','Eddie Jordan');
+insert into teams values( 'Jordan','IE','Eddie Jordan',);
+insert into teams values( 'Jordan','IE','Eddie Jordan','');
+insert into teams values( 'Jordan','IE','Eddie Jordan',NULL);
+select * from teams ORDER BY year;
+select * from teams where year <2014;
+exit
